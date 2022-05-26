@@ -18,7 +18,8 @@ class LoginApi implements LoginApiProtocal {
     required String email,
     required String password,
   }) =>
-      Future(
+      Future.delayed(
+        const Duration(seconds: 1),
         () => email == 'foo@bar.com' && password == 'foobar',
       ).then((isLoggedIn) => isLoggedIn ? const LoginHandle.fooBar() : null);
 }

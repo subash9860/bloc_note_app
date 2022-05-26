@@ -13,20 +13,12 @@ abstract class LoginApiProtocal {
 
 @immutable
 class LoginApi implements LoginApiProtocal {
-  // singleton
-  // singleton is a class that has only one instance
-  // const LoginApi._shareInstance();
-  // static const LoginApi _shared = LoginApi._shareInstance();
-
-  // factory LoginApi.instance() => _shared;
-
   @override
   Future<LoginHandle?> login({
     required String email,
     required String password,
   }) =>
-      Future.delayed(
-        const Duration(seconds: 1),
+      Future(
         () => email == 'foo@bar.com' && password == 'foobar',
       ).then((isLoggedIn) => isLoggedIn ? const LoginHandle.fooBar() : null);
 }

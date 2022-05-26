@@ -17,8 +17,8 @@ class PasswordTextField extends StatelessWidget {
       obscureText: true,
       obscuringCharacter: '*',
       decoration: InputDecoration(
-        labelText: 'Email',
-        hintText: enterYourEmailHere,
+        labelText: 'Password',
+        hintText: enterYourPasswordHere,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),

@@ -18,8 +18,11 @@ class LoginView extends HookWidget {
     final passwordController = useTextEditingController();
     return Column(
       children: [
+        const SizedBox(height: 40),
         EmailTextField(emailController: emailController),
+        const SizedBox(height: 40),
         PasswordTextField(passwordController: passwordController),
+        const SizedBox(height: 20),
         LoginButton(
           emailController: emailController,
           passwordController: passwordController,

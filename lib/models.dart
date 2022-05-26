@@ -23,7 +23,7 @@ enum LoginErrors {
   invalidHandle,
 }
 
-@immutable
+ @immutable
 class Note {
   final String title;
 
